@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 import App from "./App";
-import Grid from "./components/Grid";
+
 import NavB from "./components/NavB";
 import Algorithms from "./components/Algorithms";
 
@@ -13,7 +13,6 @@ ReactDOM.render(
   <React.StrictMode>
     <NavB/>
     <Algorithms />
-    <Grid/>
     <App />
   </React.StrictMode>,
   document.getElementById("root")

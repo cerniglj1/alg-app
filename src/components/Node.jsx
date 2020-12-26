@@ -3,11 +3,24 @@ class Node extends Component {
   state = {
     heuristic: 0,
   };
+  connections = [];
+  name = "";
+  cost = 0;
+  id = "";
+  isSelected = false;
   constructor(props) {
     super(props);
-    console.log({ props });
+
+    if (props) {
+      this.connections = props.conn;
+      this.name = props.name;
+      this.cost = props.cost;
+      this.id = props.id;
+    }
     // Don't call this.setState() here!
-    this.state.heuristic = props[0];
+  }
+  setConnections(a) {
+    this.connections = a;
   }
   render() {
     return (
